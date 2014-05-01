@@ -33,10 +33,7 @@ public class Sokoban extends JPanel {
         instructions = new JLabel("Instructions for Play:  Move Player by using Directional Arrows. Hit 'N' for Next Level, 'R' to Restart Level and 'B' for Back one level || ");
         this.add(instructions);
         instructions.setFont(new Font("Californian FB", Font.BOLD, 12));
-        //instructions.setOpaque(true);
-        //instructions.setBackground(Color.BLUE);
-        //instructions.setForeground(Color.RED);
-        
+  
         //Move counter
         moves = new JLabel("");
         this.add(moves);
@@ -93,8 +90,6 @@ public class Sokoban extends JPanel {
     public void paintComponent(Graphics g) {
         double centerX = 612.50 - (lr.getWidth(currentlevel)/2 * 40); //meant to accomodate largest level in m1.txt
         double centerY = 362.50 - (lr.getHeight(currentlevel)/2 * 40); 
-         //w= lr.getWidth(level);
-      // h= lr.getHeight(level); 
         
         if(isReady) {
         
